@@ -8,10 +8,11 @@ from homeassistant.const import CONF_HOST, Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryNotReady
 
-from . import connection_fix
+from . import connection_fix, message_fix
 from .const import DOMAIN
 
 connection_fix.apply()
+message_fix.apply()
 
 PLATFORMS: list[Platform] = [Platform.CLIMATE, Platform.FAN]
 

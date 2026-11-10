@@ -15,11 +15,9 @@ from homeassistant.components.climate import (
     ClimateEntity,
     ClimateEntityFeature,
     HVACMode,
-    UnitOfTemperature,
-    ATTR_TEMPERATURE,
-    PRECISION_WHOLE
 )
-from homeassistant.helpers.entity import DeviceInfo
+from homeassistant.const import ATTR_TEMPERATURE, PRECISION_WHOLE, UnitOfTemperature
+from homeassistant.helpers.device_registry import DeviceInfo
 
 _LOGGER = logging.getLogger(__name__)
 
